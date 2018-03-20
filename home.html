@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BasketballGy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="basketball.png";>
+</head>
+<body style="background-image: url(black.jpg); background-repeat:;background-position: center;background-size: cover;">
+
+<div>
+	<ul>
+		<li class="current"></li>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="product4.html">Product</li>
+		<li><img src="basketball.png" style="width: 5%; height: 5%;padding-right:20px;padding-top: 15px;"></li>
+		<li><a href="about.html">About & Contact</a></li>
+
+                             
+	</ul>
+</div>
+	<div class="background">
+		<div class="font">
+			BASKETBALL ITS NOT JUST <br>
+			A SPORT ITS A LIFE<br>
+			 STYLE SO GET YOUR <br>
+		     BASKETBALL SHOES<br>
+			NOW AND START YOUR <br>
+			BASKETBALL LIFE </div>
+	</div>
+<div class="row" style="color: white;text-shadow: 2px 2px black;">
+  <div class="column side">
+       <h2>Easy delivery</h2>
+    <p>To make things easy,we've teamed up with our friends BasketballSent to bring you a dedicated basketball shoes shipping and collection service .Flat rate pricing and basketball shoes boxes included - hassle free all the way! </p>
+  </div>
+
+  <div class="column middle">
+      <h2>Security</h2>
+    <p>BasketballGy has been established in 2018. Since that time, more than 100,000 customers trusted us and approx.We are specialized in sale of streatwear shoes. We can humbly boast, that we probably have the largest number of Air Jordan models in the Malaysia. All of our products come from official distributor and they are 100% original.</p>
+  </div>
+
+  <div class="column side">
+  		<h2>Get paid safely</h2>
+    <p>Don't risk not getting paid! Buyers pay up-front before the basketball shoes is picked up.</p>
+  </div>
+</div>
+</div>
+<p>
+            	<ul class="menu">
+                              <li>
+                                 <a href="#">Gallery</a>
+                              </li>                                  
+                        </ul>
+            </p>
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="KobeShoes.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="LebronShoes.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="WestbrookShoes.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<footer class="bg-lightgray">
+
+        <div class="copyrights" style="margin-top:25px;">
+            <p>BasketballGy &copy; 2018, All Rights Reserved
+                <br>
+                <span>Web Design By: Guo Yuan</span></p>
+        </div>
+</footer>
+
+
+</body>
+</html>
